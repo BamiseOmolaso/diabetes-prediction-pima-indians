@@ -14,10 +14,10 @@ import pickle
 import streamlit as st
 import sklearn
 
-with open('C:/Users/user/OneDrive/Documents/Everything AI/model_diabetesprediction (1).pkl', 'rb') as file:
+with open('model_diabetesprediction (1).pkl', 'rb') as file:
     loaded_model = pickle.load(file)
     
-with open('C:/Users/user/OneDrive/Documents/Everything AI/quantile_transformer.pkl', 'rb') as file:
+with open('quantile_transformer.pkl', 'rb') as file:
     transformer = pickle.load(file)    
     
 def diabetes_prediction(input_data):
